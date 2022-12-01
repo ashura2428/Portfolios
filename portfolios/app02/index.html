@@ -4,13 +4,38 @@
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="./images/favicon.ico">
-	<title>App02</title>
+	<title>WeatherApp</title>
 	<!-- CSS -->
 	<link rel="stylesheet" href="./css/custom.css">
 </head>
 <body>
-	<h1>App02</h1>
+	<h1>WeatherApp</h1>
+	<p>
+		提出期限:11月28日(月)
+	</p>
 
+<div class="tennkiyohou">
+
+	<!-- 美濃地方 -->
+	<div class="mino">
+		<h1 id="basho1"></h1>
+		<!-- ここに画像を入れる -->
+		<ul>
+			<li id="mino_saikou"></li>
+		</ul>
+		<p></p>
+	</div>
+
+	<!-- 飛騨地方 -->
+	<div class="hida">
+		<h1 id="basho2"></h1>
+		<!-- ここに画像を入れる -->
+		<ul>
+			<li id="hida_saikou"></li>
+		</ul>
+		<p></p>
+	</div>
+</div>
 	<!-- JavaScript -->
 	<script src="//cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script>
 	<script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
