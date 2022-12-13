@@ -4,40 +4,40 @@
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="./images/favicon.ico">
-	<title>Research</title>
+	<title>Interval</title>
 	<!-- CSS -->
 	<link rel="stylesheet" href="./css/custom.css">
 </head>
 <body>
-	<h1>Develop: 開発</h1>
-	<ol>
-		<li>案件:「割り勘」を計算するアプリを作る事</li>
-		<li>要件: 金額、人数を入力する事で、割り勘金額が表示される</li>
-		<li>条件: 各チームごと開発を進める事(CEOは全員提出を確認)</li>
-		<li>提出: GitHub PagesにUploadし、URLを報告する事</li>
-		<li>期限: 12月19日(月)</li>
-	</ol>
+	<div id="sentou">
+		<div id="title">
+		<h1>戦闘シミュレーター</h2>
+		</div>
+			<div id="status1">
+				<h3 id="lv">LV 1</h3><P id="exp">0000 / 0000</P>
+				<h3>HP</h3><p id="hp">100 / 100</p>
+			</div>
+			<div id="status2">
+				<h3>STR</h3><p id="str">2</p>
+				<h3>DEF</h3><p id="def">1</p>
+			</div>
 
-    <head>
-        <meta charset="utf-8">
-        <title>Vibration Demo</title>
-        <meta name="description" content="Just BuruBuru.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script>
-                function vibrate(){ 
-                    window.navigator.vibrate(200);
-                }
-        </script>
-    </head>
-    <body>
-        <div style="text-align:center;" >
-            <button onclick="vibrate()">Vibrate</button>
-        </div>
-    </body>
-</html>
+		<div id="battle">
+			<h2 id="teki"></h2>
+			<p id="hp_teki"></p>
+		</div>
 
+		<div id="text">
+			<p id="text1"></p>
+		</div>
+		<div id="button">
+			<button id="btn1">探索</button>
+			<button id="btn2">攻撃</button>
+			<button id="btn3">スキル</button>
+			<button id="btn4">逃げる</button>
+		</div>
+	</div>
 	<!-- JavaScript -->
-	<script src="//cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script>
 	<script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
 	<script src="./main.js"></script>
 </body>
