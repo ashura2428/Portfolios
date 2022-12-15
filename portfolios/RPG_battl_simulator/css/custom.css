@@ -1,0 +1,111 @@
+/* CSS */
+
+html, body{
+	width: 400px;
+	margin: 0 auto 0 auto;
+	background-color: dimgrey;
+}
+
+#sentou{
+	display: grid;
+	width: 400px;
+	height: 10px;
+	margin: 0 auto 0 auto;
+	grid-template-rows: 60px 30px 30px 180px 60px 80px;
+	color: white;
+}
+
+#title{
+	border: solid white;
+	grid-row: 1;
+	background-color: black;
+}
+
+#title h1{
+	margin: auto 0 auto 0;
+}
+
+#status1{
+	border: solid white;
+	grid-row: 2;
+	display: flex;
+	background-color: black;
+}
+
+#status2{
+	border: solid white;
+	grid-row: 3;
+	display: flex;
+	background-color: black;
+}
+
+#status1 p{
+	margin: 2px;
+	padding: 0 0 0 20px;
+}
+
+#status2 p{
+	margin: 2px;
+	padding: 0 0 0 20px;
+}
+
+#status1 h3{
+	margin: 0;
+	padding: 0 0 0 0px;
+}
+
+#status2 h3{
+	margin: 0;
+	padding: 0 0 0 0px;
+}
+
+.hp, .def{
+	border-left: solid white;
+}
+
+#battle{
+	border: solid white;
+	grid-row: 4;
+	text-align: center; /*画像を出すようになったらここは変える*/
+	background-color: black;
+}
+
+#teki{
+	margin: auto auto;
+}
+
+#text{
+	border: solid white;
+	grid-row: 5;
+	background-color: black;
+}
+
+#text1{
+	margin: 0 auto 0 5px;
+}
+
+#button{
+	border: solid white;
+	grid-row: 6;
+	display: flex;
+	background-color: black;
+}
+
+ button{
+	width: 100px;
+	height: 50px;
+	margin: auto auto;
+}
+
+/* PC用セット-----------------------------*/
+@media screen and (min-width: 600px) {
+
+html, body{
+	width: 500px;
+}
+#sentou{
+	width: 500px;
+}
+
+
+}
