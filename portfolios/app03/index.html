@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="./images/favicon.ico">
+	<title>Research</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+
+	<div class="warikan">
+		<h1>割り勘アプリ</h1>
+		<div class="kazu">
+			<p id="text1">人数</p><input tyoe="text"  id="ninzuu"><P>人</P>
+		</div>
+		<div class="nedan">
+			<p id="text2">金額</p><input type="text"  id="kingaku"><p>円</p>
+		</div> 
+
+		<h3 id="goukei">一人当たりの金額 = </h3>
+	</div>
+	<button id="siken">計算</button>
+
+	<h2>計算用電卓</h2>
+	<div id="keisan">
+		<h2 id="kekka"></h2>
+	  </div>
+	  
+	  <div id="button">
+		<div class="dan_1"><button id="ac">AC</button><button id="puramai">+/-</button><button id="percent">%</button><button id="waru">/</button></div>
+		<div class="dan_2"><button id="7">7</button><button id="8">8</button><button id="9">9</button><button id="kakeru">*</button></div>
+		<div class="dan_3"><button id="4">4</button><button id="5">5</button><button id="6">6</button><button id="mainasu">-</button></div>
+		<div class="dan_4"><button id="1">1</button><button id="2">2</button><button id="3">3</button><button id="purasu">+</button></div>
+		<div class="dna_5"><button id="zero">0</button><button id="ten">.</button><button id="ikoru">=</button></div>
+	  </div>
+	<!-- JavaScript -->
+	<script src="//cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script>
+	<script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
+	<script src="./main.js"></script>
+</body>
+</html>
