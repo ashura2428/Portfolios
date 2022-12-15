@@ -7,34 +7,66 @@
 	<title>Interval</title>
 	<!-- CSS -->
 	<link rel="stylesheet" href="./css/custom.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
 	<div id="sentou">
 		<div id="title">
-		<h1>戦闘シミュレーター</h1>
+		<h1>RPG風戦闘ゲーム(？)</h1>
 		</div>
-			<div id="status1">
-				<h3 id="lv">LV 1</h3><P id="exp">0000 / 0000</P>
-				<h3 class="hp">HP</h3><p id="hp">100 / 100</p>
+			<div class="status1">
+				<div id="status1">
+					<h3 id="lv">Lv 1</h3><P id="exp">0000 / 0000</P>
+				</div>
+				<div id="status2">
+					<h3 class="hp">HP</h3><p id="hp">100 / 100</p>
+				</div>
 			</div>
-			<div id="status2">
+			<div id="status3">
 				<h3>STR</h3><p id="str">2</p>
 				<h3 class="def">DEF</h3><p id="def">1</p>
 			</div>
+			<div id="money">
+				<h3>G</h3><P id="g">0</P>
+			</div>
 
 		<div id="battle">
-			<h2 id="teki"></h2>
+			<a id="teki"></a>
 			<p id="hp_teki"></p>
 		</div>
 
 		<div id="text">
 			<p id="text1"></p>
+			<p id="text2"></p>
 		</div>
 		<div id="button">
 			<button id="btn1">探索</button>
 			<button id="btn2">攻撃</button>
 			<button id="btn3">スキル</button>
 			<button id="btn4">逃げる</button>
+		</div>
+	
+		<div id="menu">
+
+		</div>
+		
+		<div id="stage">
+
+		</div>
+
+		<div id="savedata">
+			<button id="save">セーブ</button>
+			<div id="data1">
+				<button id="road1">ロード</button>
+			</div>
+
+			<div id="data2">
+				<button id="road2">ロード</button>
+			</div>
+
+			<div id="data3">
+				<button id="road3">ロード</button>
+			</div>
 		</div>
 	</div>
 	<!-- JavaScript -->

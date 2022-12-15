@@ -9,9 +9,9 @@ html, body{
 #sentou{
 	display: grid;
 	width: 400px;
-	height: 10px;
+	height: 1fr;
 	margin: 0 auto 0 auto;
-	grid-template-rows: 60px 30px 30px 180px 60px 80px;
+	grid-template-rows: 60px 30px 30px 30px 30px 180px 60px 80px 90px 80px 30px 50px 50px 50px 50px;
 	color: white;
 }
 
@@ -25,16 +25,31 @@ html, body{
 	margin: auto 0 auto 0;
 }
 
+/*status画面----------------------------------------------------*/
 #status1{
 	border: solid white;
-	grid-row: 2;
 	display: flex;
+	grid-row: 2;
 	background-color: black;
 }
 
 #status2{
 	border: solid white;
 	grid-row: 3;
+	display: flex;
+	background-color: black;
+}
+
+#status3{
+	border: solid white;
+	grid-row: 4;
+	display: flex;
+	background-color: black;
+}
+
+#money{
+	border: solid white;
+	grid-row: 5;
 	display: flex;
 	background-color: black;
 }
@@ -49,24 +64,45 @@ html, body{
 	padding: 0 0 0 20px;
 }
 
+#status3 p{
+	margin: 2px;
+	padding: 0 0 0 20px;
+}
+
+#money p{
+	margin: 2px;
+	padding: 0 0 0 20px;
+}
+
 #status1 h3{
 	margin: 0;
-	padding: 0 0 0 0px;
+	padding: 0 0 0 4px;
 }
 
 #status2 h3{
 	margin: 0;
-	padding: 0 0 0 0px;
+	padding: 0 0 0 4px;
 }
 
-.hp, .def{
+#status3 h3{
+	margin: 0;
+	padding: 0 0 0 4px;
+}
+
+#money h3{
+	margin: 0;
+	padding: 0 0 0 4px;
+}
+
+.def{
 	border-left: solid white;
 }
 
+/*battle画面-----------------------------------------------------------*/
 #battle{
 	border: solid white;
-	grid-row: 4;
-	text-align: center; /*画像を出すようになったらここは変える*/
+	grid-row: 6;
+	text-align: center;
 	background-color: black;
 }
 
@@ -76,36 +112,157 @@ html, body{
 
 #text{
 	border: solid white;
-	grid-row: 5;
+	grid-row: 7;
 	background-color: black;
 }
 
-#text1{
+#text1, #text2{
 	margin: 0 auto 0 5px;
 }
 
 #button{
 	border: solid white;
-	grid-row: 6;
+	grid-row: 8;
 	display: flex;
 	background-color: black;
 }
 
- button{
-	width: 100px;
-	height: 50px;
+button{
+	width: 90px;
+	height: 45px;
 	margin: auto auto;
 }
 
-/* PC用セット-----------------------------*/
+/*menu画面---------------------------------------------------------*/
+
+#menu{
+	border: solid white;
+	grid-row: 9;
+	display: flex;
+	background-color: black;
+}
+
+#stage{
+	border: solid white;
+	grid-row: 10;
+	display: flex;
+	background-color: black;
+}
+
+/*grid-row: 11;はゲーム画面とのスペースを空けるため*/
+
+#savedata{
+	grid-row: 12;
+}
+
+#save{
+	width: 80px;
+	height: 40px;
+	font-size: 11.8px;
+	margin: 0 0 10px 0;
+}
+
+#data1, #data2, #data3{
+	width: 400px;
+	border: solid white;
+	display: flex;
+	background-color: black;
+	padding: 10px 0 10px 0;
+}
+
+#road1, #road2, #road3{
+	font-size: 9px;
+	width: 60px;
+	height: 30px;
+	margin-right: 8px;
+}
+
+/* PC用セット----------------------------------------------------------*/
 @media screen and (min-width: 600px) {
 
 html, body{
-	width: 500px;
-}
-#sentou{
-	width: 500px;
+	width: 600px;
 }
 
+#sentou{	
+	width: 600px;
+	grid-template-rows: 60px 30px 30px 30px 180px 60px 80px 90px 80px 30px 50px 50px 50px 50px;
+}
+
+#status1{
+	border: none;
+}
+
+#status2{
+	border: none;
+}
+
+.status1{
+	border: solid white;
+	grid-row: 2;
+	display: flex;
+	background-color: black;
+}
+
+.hp{
+	border-left: solid white;
+}
+
+#status3{
+	grid-row: 3;
+}
+
+#money{
+	grid-row: 4;
+}
+
+#battle{
+	grid-row: 5;
+}
+
+#text{
+	grid-row: 6;
+}
+
+#button{
+	grid-row: 7;
+}
+
+button{
+	width: 120px;
+	height: 60px;
+	margin: auto auto;
+	font-size: 18px;
+}
+
+#menu{
+	grid-row: 8;
+}
+
+#stage{
+	grid-row: 9;
+}
+
+/*grid-row: 10;はゲーム画面とのスペースを空けるため*/
+
+#savedata{
+	grid-row: 11;
+}
+
+#save{
+	width: 100px;
+	height: 50px;
+	font-size: 13.8px;
+}
+
+#data1, #data2, #data3{
+	width: 600px;
+}
+
+#road1, #road2, #road3{
+	font-size: 11px;
+	width: 80px;
+	height: 40px;
+}
 
 }
