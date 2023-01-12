@@ -11,7 +11,7 @@ html, body{
 	width: 400px;
 	height: 1fr;
 	margin: 0 auto 0 auto;
-	grid-template-rows: 60px 30px 30px 30px 30px 180px 60px 80px 90px 80px 30px 50px 50px 50px 50px;
+	grid-template-rows: 60px 30px 30px 30px 30px 30px 180px 60px 80px 110px 80px 30px 50px 50px 50px 50px;
 	color: white;
 }
 
@@ -47,9 +47,16 @@ html, body{
 	background-color: black;
 }
 
-#money{
+#status4{
 	border: solid white;
 	grid-row: 5;
+	display: flex;
+	background-color: black;
+}
+
+#money{
+	border: solid white;
+	grid-row: 6;
 	display: flex;
 	background-color: black;
 }
@@ -65,6 +72,11 @@ html, body{
 }
 
 #status3 p{
+	margin: 2px;
+	padding: 0 0 0 20px;
+}
+
+#status4 p{
 	margin: 2px;
 	padding: 0 0 0 20px;
 }
@@ -89,6 +101,11 @@ html, body{
 	padding: 0 0 0 4px;
 }
 
+#status4 h3{
+	margin: 0;
+	padding: 0 0 0 4px;
+}
+
 #money h3{
 	margin: 0;
 	padding: 0 0 0 4px;
@@ -101,7 +118,7 @@ html, body{
 /*battle画面-----------------------------------------------------------*/
 #battle{
 	border: solid white;
-	grid-row: 6;
+	grid-row: 7;
 	text-align: center;
 	background-color: black;
 }
@@ -111,8 +128,9 @@ html, body{
 }
 
 #text{
+	font-size: 13px;
 	border: solid white;
-	grid-row: 7;
+	grid-row: 8;
 	background-color: black;
 }
 
@@ -122,7 +140,7 @@ html, body{
 
 #button{
 	border: solid white;
-	grid-row: 8;
+	grid-row: 9;
 	display: flex;
 	background-color: black;
 }
@@ -137,22 +155,44 @@ button{
 
 #menu{
 	border: solid white;
-	grid-row: 9;
-	display: flex;
+	grid-row: 10;
+	/* display: flex; */
 	background-color: black;
+}
+
+#menubtn1, #menubtn2, #menubtn3, #menubtn4{
+	width: 120px;
+	height: 30px;
+	margin: 5px 0px 5px 5px;
+}
+
+#menu1{
+	display: flex;
+}
+
+#menutext1, #menutext2{
+	margin: 10px auto 0 auto;
+}
+
+#menu2{
+	display: flex;
+}
+
+#menutext3, #menutext4{
+	margin: 10px auto 0 auto;
 }
 
 #stage{
 	border: solid white;
-	grid-row: 10;
+	grid-row: 11;
 	display: flex;
 	background-color: black;
 }
 
-/*grid-row: 11;はゲーム画面とのスペースを空けるため*/
+/*grid-row: 12;はゲーム画面とのスペースを空けるため*/
 
 #savedata{
-	grid-row: 12;
+	grid-row: 13;
 }
 
 #save{
@@ -186,46 +226,28 @@ html, body{
 
 #sentou{	
 	width: 600px;
-	grid-template-rows: 60px 30px 30px 30px 180px 60px 80px 90px 80px 30px 50px 50px 50px 50px;
+	grid-template-rows: 60px 30px 30px 30px 30px 30px 180px 60px 80px 110px 80px 30px 50px 50px 50px 50px;
 }
 
-#status1{
-	border: none;
-}
-
-#status2{
-	border: none;
-}
-
-.status1{
-	border: solid white;
-	grid-row: 2;
-	display: flex;
-	background-color: black;
-}
-
-.hp{
-	border-left: solid white;
-}
-
-#status3{
-	grid-row: 3;
-}
-
-#money{
-	grid-row: 4;
-}
-
-#battle{
+#status4{
 	grid-row: 5;
 }
 
-#text{
+#money{
 	grid-row: 6;
 }
 
-#button{
+#battle{
 	grid-row: 7;
+}
+
+#text{
+	font-size: 16px;
+	grid-row: 8;
+}
+
+#button{
+	grid-row: 9;
 }
 
 button{
@@ -236,17 +258,17 @@ button{
 }
 
 #menu{
-	grid-row: 8;
+	grid-row: 10;
 }
 
 #stage{
-	grid-row: 9;
+	grid-row: 11;
 }
 
-/*grid-row: 10;はゲーム画面とのスペースを空けるため*/
+/*grid-row: 12;はゲーム画面とのスペースを空けるため*/
 
 #savedata{
-	grid-row: 11;
+	grid-row: 13;
 }
 
 #save{
