@@ -1,0 +1,65 @@
+/* CSS */
+
+html, body{
+	width: 900px;
+	height: 9000px;
+	margin: 0 auto 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 60px 1fr 60px;
+	background-color: black;
+	color: white;
+	border: solid white;
+	border-right: 5px solid white;
+}
+
+#title{
+	border-bottom: 5px solid white;
+}
+
+.honbun{
+	grid-row: 2;
+}
+
+.honbun h2{
+	margin-left: 10px;
+	margin-bottom: -10px;
+}
+
+.honbun p{
+	margin-left: 10px;
+}
+
+img{
+	border-top: 5px solid white;
+	border-bottom: 5px solid white;
+	width: 900px;
+	height: 500px;
+}
+
+#tunagi{
+	margin-top: -15px;
+	display: flex;
+}
+#tunagi h3{
+	color: red;
+	margin-top: 13px;
+	margin-bottom: 0px;
+}
+
+#gazousanren{
+	border-bottom: 5px solid white;
+	border-top: 5px solid white;
+}
+#gazousanren img{
+	border: none;
+	width: 250px;
+	height: 250px;
+}
+
+
+
+/* PC用セット----------------------------------------------------------*/
+@media screen and (min-width: 600px) {
+
+}
