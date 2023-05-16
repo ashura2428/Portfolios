@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="./images/favicon.ico">
+	<title>PiyoForm</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="./libs/bootstrap/carousel.css">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+	
+	<!-- Header(Start) -->
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img src="./images/logo.png">PiyoForm
+				</a>
+			</div>
+		</nav>
+	</header>
+	<!-- Header(End) -->
+
+	<!-- Main(Start) -->
+	<main>
+		<body>
+			<div class="container mt-5">
+				<h1>FormControl</h1>
+			</div>
+			<div class="container">
+				<div class="col">
+					<label class="form-label" for="inputEmail">Email address</label>
+					<input type="email" class="col-12" class="for,-control" id="inputEmail" placeholder="メールアドレスを入力">
+				</div> 
+			</div>
+
+			<div class="container">
+				<div class="col">
+					<label class="form-label" for="inputEmail">Example textarea</label>
+					<textarea class="form-control" class="col-12" placeholder="" id="floatingTextarea" style="height: 100px;"></textarea>
+					<select class="for,-select mt-3" id="floatingSelect" aria-label="Open this select menu">
+						<option selected>Open this select menu</option>
+						<option value="1">なんか</option>
+					</select>
+
+					<!-- チェックボックス　214p -->
+					<div class="form-check mt-3">
+						<input class="form-check-input" type="checkbox" value="" id="check1">
+						<label class="form-check-label" for="check">Default checkbox</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" value="" id="check2">
+						<label class="form-check-label" for="check">Checked checkbox</label>
+					</div>
+
+					<div class="form-check mt-3">
+						<input class="form-check-input" type="radio" name="radios" id="radios1" calue="option1" checked>
+						<label class="form-check-label" for="radios1">Default radio</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="radios" id="radios2" calue="option2" checked>
+						<label class="form-check-label" for="radios2">Checked radio</label>
+					</div>
+
+					<div class="form-check form-switch mt-3">
+						<input class="form-check-input" type="checkbox" value="" id="check1">
+						<label class="form-check-label" for="check1">Default switch</label>
+					</div>
+					<div class="form-check form-switch">
+						<input class="form-check-input" type="checkbox" value="" id="check2">
+						<label class="form-check-label" for="check2">Checked switch</label>
+					</div>
+
+					<!-- button -->
+					<button type="button" class="btn btn-primary">Submit</button>
+					<button type="button" class="btn btn-secondary">Reset</button>
+				</div> 
+			</div>
+		</body>
+	</main>
+	<!-- Main(End) -->
+
+	<!-- Footer(Start) -->
+	<footer>
+		<div class="container text-muted py-5">
+			<p class="float-end mb-1"><a href="#">Back to top</a></p>
+			<p class="mb-1">&copy; Bootstrap</p>
+			<p class="mb-0">
+				<a href="https://getbootstrap.jp" target="_blank">Bootstap公式サイト</a>や
+				<a href="https://getbootstrap.jp/docs/5.0/getting-started/introduction/" target="_blank">スタートガイド</a>、
+				<a href="https://icons.getbootstrap.com/" target="_blank">アイコン</a>を活用しましょう。
+			</p>
+		</div>
+	</footer>
+	<!-- Footer(End) -->
+
+	<!-- JavaScript -->
+	<script src="./libs/jquery/jquery-3.6.1.min.js"></script>
+	<script src="./libs/bootstrap/bootstrap.min.js"></script>
+	<script src="./main.js"></script>
+</body>
+</html>
