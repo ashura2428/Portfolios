@@ -38,6 +38,10 @@ html, body{
 	height: 50px;
 }
 
+#mychat_card{
+	margin-left: -23px;
+	margin-right: -23px;
+}
 #chat_card{
 	margin-left: -23px;
 	margin-right: -23px;
