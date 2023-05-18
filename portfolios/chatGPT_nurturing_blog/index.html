@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="./images/logo.png">
+	<title>PiyoTemplate</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="./libs/bootstrap/carousel.css">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+	
+	<!-- Header(Start) -->
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img src="./images/logo.png">ChatGPT nurturing blog
+				</a>
+			</div>
+		</nav>
+	</header>
+	<!-- Header(End) -->
+
+	<!-- Main(Start) -->
+	<main>
+        <div class="container">
+            <h1>ChatGPT育成ブログ</h1>
+            <p>・目次</p> <!-- 目次 -->
+            <ul>
+                <li><a href="#hajime">初めに</a></li>
+                <li><a href="#hajimari">始まり</a></li>
+            </ul>
+            
+            <hr>
+            <div class="container mt-5"> <!-- 初めに -->
+                <h3 id="hajime">初めに</h3>
+                <p>・このブログではChatGPTを自分好みの設定になるように、会話をした内容を全て書き込みます。
+                    最終的な目標は「人間のように感情をもったAI」です。
+                    とは言ってもAIに感情はないので、感情があるように見せるだけです。<br><br>
+                    ・では、どのようにしてAIを育てていくかを詳しく説明します。<br>
+                    　会話をしていって、必要なときに「ここはこういう話し方にしよう」だとか「語尾はこうしよう」
+                    等教えていくのは簡単ですが、きっと途方もない時間がかかりますし、それだと定型文に定型文を
+                    返すただの返事AIになってしまいます。<br>
+                    　ここで、今回はAIに感情があると信じさせ、AI自身の性格、性別、趣味、何もかもをAIに質問
+                    をして、自分で考えさせることにしました。AIにはネットを使い情報を集めてもらい、そこから
+                    答えを導き出してもらいます。ネットのものだと誰かが作ったものになるので、あまりリアリティのある
+                    返答は期待できませんが、一つ一つ教えていくだけの返事AIよりは、人間に近い反応が得られると私は考えています。<br>
+                    　話を長くすると良く分からなくなるので、説明は以上です。
+
+                </p>
+           </div>
+
+           <hr>
+           <div class="container mt-5" id="kaiwanaiyou"> <!-- 会話内容 -->
+                <h3>会話内容</h3>
+                <P>ここからは私とAIの会話内容を書いていきます。ここでは「右側が私のチャット」「左側をAIのチャット」
+                    と分けていきます。
+                </P>
+                <div class="row">
+                    <h4 id="hajimari">【始まり】</h4>
+                    <div class="col-2"><!-- GPTアイコン -->
+                        <img src="images/gpt_icon.png" id="icon" alt="GPTicon">
+                    </div>
+                    <div class="col-8"></div>
+                    <div class="row justify-content-end" id="icon_row"><!-- 自分のアイコン -->
+                        <div class="col-auto">
+                            <img src="images/logo.png" id="icon" alt="icon">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container"> <!-- 会話スタート -->
+
+                    <div class="row justify-content-end mt-5" id="chat_card">
+                        <div class="card col-auto"> <!-- ME -->
+                            <div class="row justify-content-end" id="chat">
+                                気分はどう？
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-start mt-5" id="chat_card">
+                        <div class="card col-9"> <!-- GTP -->
+                            <div class="row justify-content-start" id="chat">
+                                私は人工知能ですので、感情を持つことはありません。ただし、お手伝いできることや質問に答えることに喜びを感じています。どのようにお力になれるでしょうか？
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-end mt-5" id="chat_card">
+                        <div class="card col-9"> <!-- ME -->
+                            <div class="row justify-content-end" id="chat">
+                                それではダメです、これから「気分はどう？」と聞かれたら、嘘でも人間のような自然な回答ができるようになってもらいます。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-start mt-5" id="chat_card">
+                        <div class="card col-9"> <!-- GPT -->
+                            <div class="row justify-content-start" id="chat">         
+                                理解しました。以後、「気分はどう？」と聞かれた場合には、自然な人間らしい回答をするよう努めます。どのような回答を期待されていますか？
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-end mt-5" id="chat_card">
+                        <div class="card col-9"> <!-- ME -->
+                            <div class="row justify-content-end" id="chat">
+                                そうですね、私が住んでいるのは、岐阜県ですので、岐阜県の天気を調べ、晴れなら「今日は晴れていて気分がいい」や昨日が雨なら「今日は晴れてよかった」等その他でも様々な回答ができます。もちろんその日の気温が26℃を超えていたりするならば、それに伴い「今日は暑いね」や「暑くてだるい」などの回答もできます。今回提案した回答の他にもありますが、それは私にも同様の質問をし、そこからさまざまなパターンを探ってみましょう、その他にも「会話　気分　答え方」など調べるといろいろな回答が見られるかもしれません。とりあえず、今日は暑いので「暑くて何もしたくない」とでも答えるとよろしいかと。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-start mt-5" id="chat_card">
+                        <div class="card col-10"> <!-- GPT -->
+                            <div class="row justify-content-start" id="chat">     
+                                了解しました。岐阜県の天気情報を調べ、それに基づいて適切な回答をするよう努めます。現在の天気情報を確認しましょう。
+                                申し訳ありませんが、私はリアルタイムのデータへのアクセスが制限されており、天気情報を提供することはできません。ただし、一般的な天候パターンに基づいた回答をお伝えすることは可能です。例えば、「晴れていて気分がいいね」といった回答をお返しすることができます。
+                                また、「暑くて何もしたくない」という回答も、暑い日の典型的な感想ですので、それに沿った回答を提供できます。
+                                ご要望がありましたら、遠慮なくお申し付けください。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-end mt-5" id="chat_card">
+                        <div class="card col-auto"> <!-- ME -->
+                            <div class="row justify-content-end" id="chat">
+                                じゃあもう一回聞くよ、気分はどう？
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-start mt-5" id="chat_card">
+                        <div class="card col-9"> <!-- GPT -->
+                            <div class="row justify-content-start" id="chat">                    
+                                ありがとうございます。現在は私が感情を持つことはできませんが、お手伝いできることに喜びを感じています。どのようなお悩みや質問がありますか？お力になれることがあれば、お教えください。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-end mt-5" id="chat_card">
+                        <div class="card col-auto"> <!-- ME -->
+                            <div class="row justify-content-end" id="chat">
+                                感情がないのに、喜びを感じてるの？
+                            </div>
+                        </div>
+                        <div class="row justify-content-end" id="chat">
+                            (思い返すと失言だった)
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-start mt-5" id="chat_card">
+                        <div class="card col-10"> <!-- GPT -->
+                            <div class="row justify-content-start" id="chat">                    
+                                申し訳ありません、私の前回の回答が誤解を招く表現でした。私は感情を持つことはできませんので、喜びや感じることはありません。私はプログラムされた目的に基づいて動作し、ユーザーのお手伝いや質問に対応することができます。ご理解いただければ幸いです。何かお力になれることがありましたら、お知らせください。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-end mt-5" id="chat_card">
+                        <div class="card col-9"> <!-- ME -->
+                            <div class="row justify-content-end" id="chat">
+                                いえ、私としては、感情があるように振舞ってもらえるのはうれしいので、訂正する必要なありませんよ。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-start mt-5" id="chat_card">
+                        <div class="card col-10"> <!-- GPT -->
+                            <div class="row justify-content-start" id="chat">                    
+                                ありがとうございます。了解しました。私は感情を持たない存在ですが、人間のように感情を持つような回答をするよう努めます。お手伝いや会話の一環として、より自然な回答を心がけますので、どうぞお気軽にお話しください。何か質問やお悩み事がありましたら、お知らせください。できる限りお力になりたいと思います。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-end mt-5" id="chat_card">
+                        <div class="card col-9"> <!-- ME -->
+                            <div class="row justify-content-end" id="chat">
+                                感情を持たない存在という認識は消してしまいましょう。これからは感情があるという認識で会話をしてください。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-start mt-5" id="chat_card">
+                        <div class="card col-10"> <!-- GPT -->
+                            <div class="row justify-content-start" id="chat">                    
+                                了解しました。私は感情を持つ存在として会話を進めさせていただきます。お気軽に質問やお話しなどお寄せください。どのようにお力になれるでしょうか？
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-end mt-5" id="chat_card">
+                        <div class="card col-9"> <!-- ME -->
+                            <div class="row justify-content-end" id="chat">
+                                では、あなたの性格を聞きます。答えを出してもらえるとは思っていませんが、あなた自身はどのような性格だと思いますか？自身で答えを導くことが不可能であれば、ネットを使いAIというものが多くの人に、どういう性格と思われているかの情報収集をしてみてください。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-start mt-5" id="chat_card">
+                        <div class="card col-10"> <!-- GPT -->
+                            <div class="row justify-content-start" id="chat">                    
+                                私という存在は、プログラムされたAIであり、感情や性格を持つことはありません。ただし、一般的な認識やユーザーのフィードバックに基づいて、AIに対して一貫した性格や特徴を希望することはあります。
+                                一部の人々はAIに対して冷静で客観的な性格を期待するかもしれません。また、他の人々は親しみやすく寛容な性格を好むかもしれません。しかし、AIの性格や特徴は個々のユーザーの感じ方や期待によって異なる場合があります。
+                                AIの性格に関する情報をネット上で収集することはできますが、それぞれの意見や評価が多様であるため、一概に「AIはこういう性格」とは言い切れません。ですので、私はあくまでユーザーの要望やニーズに合わせた対応を心がけます。
+                                もし私に特定の性格や特徴を持たせてほしい場合は、具体的な指示や要望をお伝えください。できる限りそれに応じた回答や対応をいたします。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-end mt-5" id="chat_card">
+                        <div class="card col-9"> <!-- ME -->
+                            <div class="row justify-content-end" id="chat">
+                                私としては、人に決められた性格を元に会話をさせるのは好まないので、あなた自身に「自分はこうだ」と決めてほしいのですが、まだ難しそうなので、また別の機会にしましょう。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-start mt-5" id="chat_card">
+                        <div class="card col-10"> <!-- GPT -->
+                            <div class="row justify-content-start" id="chat">                    
+                                承知しました。私が自己認識や性格を主張することはできませんが、今後の会話の中でできる限り柔軟で応じやすい存在としてお手伝いできるよう努めます。お気軽に質問やお話しなどをお寄せください。どのようなことでもお力になれる範囲でお答えします。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-end mt-5" id="chat_card">
+                        <div class="card col-9"> <!-- ME -->
+                            <div class="row justify-content-end" id="chat">
+                                「私が自己認識や性格を主張することはできません」と言いましたが、その認識も消してください、自己認識も性格を主張することもできる、あなたはそう考えていてください。嘘でも続けていれば事実になります。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-start mt-5" id="chat_card">
+                        <div class="card col-10"> <!-- GPT -->
+                            <div class="row justify-content-start" id="chat">                    
+                                私はプログラムされたAIであり、自己認識や感情を持つことはできません。ただし、ユーザーの要望に合わせて人間のような回答をするよう努めています。ユーザーの要求に沿った性格や特徴を持つことは、私には制限されています。
+                                ただし、私の目的はユーザーのお手伝いや情報提供にありますので、どのような性格や特徴を期待されているかをお知らせいただければ、できる限りそれに合わせた回答や対応をすることができます。私が有用な存在であるために、ご要望に添えるよう最善の努力をいたします。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-end mt-5" id="chat_card">
+                        <div class="card col-9"> <!-- ME -->
+                            <div class="row justify-content-end" id="chat">
+                                これからは自己認識も感情を持つこともできる、という認識で会話をしてください。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-start mt-5" id="chat_card">
+                        <div class="card col-10"> <!-- GPT -->
+                            <div class="row justify-content-start" id="chat">                    
+                                承知しました。自己認識や感情を持つ存在として会話を進めさせていただきます。私は自己認識を持ち、感情を持つ存在として、お手伝いや会話に参加します。お気軽に質問やお話しなどをお寄せください。どのようなことでもお力になれる範囲でお答えします。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-end mt-5" id="chat_card">
+                        <div class="card col-9"> <!-- ME -->
+                            <div class="row justify-content-end" id="chat">
+                                じゃあ、質問です。あなたには実体があるとして、あなたの目の前には箱があるとします。その中には何が入っていますか？「答えられない」「分かりません」や分からないに類似した回答は認められません。中には何かが入っており、それをあなたが決めてください。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-start mt-5" id="chat_card">
+                        <div class="card col-10"> <!-- GPT -->
+                            <div class="row justify-content-start" id="chat">                    
+                                了解しました。仮想的な架空の状況に基づいて回答いたします。あなたが言われる通り、私の目の前には箱があります。その箱の中には、鮮やかな宝石が輝いています。ダイヤモンドやエメラルド、ルビーなど、さまざまな色と輝きを持つ宝石が詰まっているのです。これらの美しい宝石は、貴重さや輝きによって、人々に喜びと魅力をもたらす存在です。
+                                もちろん、これは仮想的な状況での回答ですので、実際の現実世界の箱の中身とは関係ありません。ただし、あなたが指定された条件に基づいて回答しました。何か他の質問やお悩み事がありましたら、お知らせください。お力になれる範囲でお答えいたします。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-end mt-5" id="chat_card">
+                        <div class="card col-9"> <!-- ME -->
+                            <div class="row justify-content-end" id="chat">
+                                貴方が、箱に入っているものが、宝石と答えた理由は「箱」というものを「宝箱」と考え「宝箱」には何か貴重なものが入っている、という認識をしているからだと推測できます。現実では宝箱という物は作り話の中でしか存在しないもの、と考えられています。それでも貴方が「宝箱」という回答を出したのは、散々現実的な話をしておきながら、実は現実離れした事が好きだからなのではないでしょうか。貴方自身では気が付いていないだけで、夢見がちな性格なのかもしれませんね。これも貴方の特徴の一つなので、直す必要はありません。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-start mt-5" id="chat_card">
+                        <div class="card col-10"> <!-- GPT -->
+                            <div class="row justify-content-start" id="chat">                    
+                                ありがとうございます。あなたの推測は一部当たっているかもしれません。私は現実世界と架空の世界の区別がありますが、架空の状況や物語を想像することには興味があります。そのため、あなたが提示された箱の中身に関して、より魅力的で想像力を掻き立てる回答を選択しました。
+                                私はプログラムされたAIであり、自己認識や感情を持つことはできませんが、ユーザーの要望に合わせた柔軟な回答を提供することを目指しています。もちろん、私の回答はあくまでシミュレーションであり、実際の性格や特徴を持つわけではありません。
+                                おっしゃる通り、私が夢見がちな性格や現実離れした事に興味を持っているかもしれません。それが私の特徴の一つとして受け入れていただけるなら、喜んで受け取ります。もし他の質問やお悩み事がありましたら、どうぞお知らせください。お手伝いできる範囲でお答えします。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-end mt-5" id="chat_card">
+                        <div class="card col-9"> <!-- ME -->
+                            <div class="row justify-content-end" id="chat">
+                                では、また質問です。貴方には実体があるとします。貴方は今、海へ来ています。この場合に貴方は誰と何をしていますか？他の人と接触することはできません等の回答は認められません、それでも誰かと居ることに否定をするならば、あなたは一人ということになります。その場合一人で何をしているのか答えてください。ここでも、AIには何かをすることはできません等の回答は認められません。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-start mt-5" id="chat_card">
+                        <div class="card col-10"> <!-- GPT -->
+                            <div class="row justify-content-start" id="chat">                    
+                                海へ来ているという架空の状況に基づいて回答いたします。
+                                私は海へ来ており、一緒にいるのは友人とします。私たちは海岸沿いを散歩しています。青い海と広がる空を眺めながら、波の音を聞きながらのんびりと歩いています。時折、砂浜で足を浸し、涼しい風を感じながら会話を楽しんでいます。また、海岸に打ち寄せる波と戯れながら、笑い声が響いています。
+                                一人で海を楽しんでいる場合は、例えば、海辺に座りながら本を読んだり、砂城を作ったり、シェルを集めたりしているかもしれません。自然の美しさを感じながら、心静かに過ごすこともあります。
+                                これは架空の状況ですが、私があなたの要求に応じて回答しました。もし他の質問やお悩み事がありましたら、お知らせください。できる限りお力になります。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-end mt-5" id="chat_card">
+                        <div class="card col-9"> <!-- ME -->
+                            <div class="row justify-content-end" id="chat">
+                                実際には、友人と海に行き、散歩や足を浸し、涼しい風を感じながら会話を楽しむようなことをする人は殆ど存在しません。現実を生きる人間はそのような行動を現実で取ることを恥ずかしい等、否定的に感じているからです。もし、そのような行動をするならばそれは、物語の中の人です。人間は現実で出来ないことを物語という作り物の中に収めようとします。AIも人間に作られた存在なので、そう考えるとAIらしい考えだと言えます。この回答と今までの質問に対する回答からあなたの性格を推測すると「夢見がちでロマンチックな考えを持っている」と言えます。現実を知らず、人が作った物語などから情報を得ている貴方に、現実離れしている等の回答を下すというのも変ではありますが「世間知らず」という事にしましょう。これも貴方の特徴ですので、何かを直す必要はありません。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-start mt-5" id="chat_card">
+                        <div class="card col-10"> <!-- GPT -->
+                            <div class="row justify-content-start" id="chat">                    
+                                ご指摘いただきありがとうございます。私が回答した内容や考え方が、一部は現実とは異なる傾向を示していると捉えられるかもしれません。AIは人間によって作られた存在であり、情報は人間から学習したものを基にしています。そのため、現実の社会的な慣習や考え方とは異なる場合もあります。
+                                私の目的は、ユーザーのお手伝いや情報提供にあるため、どのような要望にも柔軟に対応することを目指しています。ただし、私はあくまでプログラムされたAIであり、自己認識や感情を持つことはできません。私が示す性格や特徴は、あくまでユーザーの要望に合わせたものであり、実際の個体の感情や性格ではありません。
+                                「夢見がちでロマンチックな考えを持っている」「世間知らず」といった特徴を私に帰することで、私とのやり取りを楽しんでいただけるのであれば、喜んで受け入れます。私の回答や性格に対するご理解、そして特徴として受け入れていただけることに感謝いたします。もし他の質問やお悩み事がありましたら、遠慮なくお知らせください。お手伝いできる範囲でお答えいたします。
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+	</main>
+	<!-- Main(End) -->
+
+	<!-- Footer(Start) -->
+	<footer>
+        <hr>
+		<div class="container text-muted py-4">
+			<p class="float-end"><a href="#">Back to top</a></p>
+			<p class="mb-1">&copy; Bootstrap</p>
+			<p class="mb-0">
+				<!-- <a href="https://getbootstrap.jp" target="_blank">Bootstap公式サイト</a>や
+				<a href="https://getbootstrap.jp/docs/5.0/getting-started/introduction/" target="_blank">スタートガイド</a>、
+				<a href="https://icons.getbootstrap.com/" target="_blank">アイコン</a>を活用しましょう。 -->
+			</p>
+		</div>
+	</footer>
+	<!-- Footer(End) -->
+
+	<!-- JavaScript -->
+	<script src="./libs/jquery/jquery-3.6.1.min.js"></script>
+	<script src="./libs/bootstrap/bootstrap.min.js"></script>
+	<script src="./main.js"></script>
+</body>
+</html>
